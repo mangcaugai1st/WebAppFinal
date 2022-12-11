@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/onMouseOver.js"></script>
+</head>
+
+<body>
+<header>
+    <img style="width: 250px;" src="images/openBSD.png" alt="">
+    <img style="width: 200px;padding-bottom: 1cm; margin-left: -1cm;" src="images/Petco_Logo.png" alt="">
+</header>
+<nav style="background-color: aliceblue; color: purple; height: 50px; margin-top:0">
+    <div style="display: flex; font-size: 30px ;margin-left: 75%">
+        <a style="margin-right: 1cm" href="index.html">Home </a>
+        <a style="margin-right: 1cm" href="products.html">Products </a>
+        <a style="margin-right: 1cm" href="support.html">Support </a>
+    </div>
+</nav>
+
+<p id= "demo" onmouseover="mouseOver()" onmouseout="mouseOut()" style="font-size: 40px; text-align: center;">Automatic Slideshow</p>
+
+<img name="slide" class="myIMG" style="padding-bottom: 1cm">
+<br>
+
+<p style="font-size: 40px; text-align: center; padding-bottom: 5cm;">Slider</p>
+<div class="images-slideshow">
+    <div class="imageSlides fade">
+        <img class="imgSlider" src="images/imagesForSlider/image1.jpg" title="Clown fish">
+    </div>
+    <div class="imageSlides fade">
+        <img class="imgSlider" src="images/imagesForSlider/image2.jpg" title="Yellow tang fish">
+    </div>
+    <div class="imageSlides fade">
+        <img class="imgSlider" src="images/imagesForSlider/image3.jpg" title="Butterfly fish">
+    </div>
+    <div class="imageSlides fade">
+        <img class="imgSlider" src="images/imagesForSlider/image4.jpg" title="Angel fish">
+    </div>
+    <div class="imageSlides fade">
+        <img class="imgSlider" src="images/imagesForSlider/image5.jpg" title="Mandarin fish">
+    </div>
+    <div class="imageSlides fade">
+        <img class="imgSlider" src="images/imagesForSlider/image6.jpg" title="Lion fish">
+    </div>
+    <a class="slider-btn previous" onclick="setSlides(-1)">❮</a>
+    <a class="slider-btn next" onclick="setSlides(1)">❯</a>
+</div>
+
+<h3 style="color: #26619C; font-size: 50px" align="center">One of the most beautiful saltwater fish</h3>
+<img onmouseover="mOver()" onmouseout="mOut()" id ="picture" width="700px" src ="images/large-empangelj.jpg" style="margin-left: 30%">
+
+<footer>
+    <p style="font-size: 30px;"> Terms of UsePrivacy PolicyYour Privacy ChoicesYour Privacy Choices IconSite
+        MapWebsite Accessibility Policy</p><br>
+    <p>©2022 Petco Animal Supplies, Inc. All rights reserved.</p>
+    <p>Petco Animal Supplies, Inc.® is not an insurer and is not engaged in the business of insurance. PetCoach, LLC
+        is a licensed insurance producer, not an insurer, and a wholly owned subsidiary of Petco Animal Supplies,
+        Inc. The Petco name is used for the brand name. In California, PetCoach, LLC does business as PetCoach
+        Insurance Solutions Agency (CA License No. 0M10414).</p><br>
+    <p>Pet Insurance plans are underwritten by United States Fire Insurance Company (NAIC#21113. Morristown, NJ).
+        Insurance plans are marketed and offered by PetCoach, LLC.</p><br>
+    <p>Pre-existing conditions are not covered. Waiting periods, annual deductible, co-insurance, benefit limits and
+        exclusions may apply. Click here for all terms and conditions. Products, schedules, discounts, and rates may
+        vary and are subject to change. More information available at checkout. Enroll at petco.com/petco-insurance.
+    </p><br>
+    <span>
+            <img src="images/openBSD.png" width="250px" style="margin-right: 70%; margin-bottom: -1.5cm;">
+            <img src="images/Petco_Logo.png" width="200px">
+        </span>
+</footer>
+
+<script>
+    function mouseOver() {
+        document.getElementById("demo").style.color = "red";
+    }
+
+    function mouseOut() {
+        document.getElementById("demo").style.color = "black";
+    }
+
+    function buy() {
+        let a = document.getElementById("tong").innerText;
+        if(a != 0) {
+            alert("Thanh toán thành công");
+        } else if (a == 0) {
+            alert("Giỏ hàng còn trống");
+        }
+    }
+</script>
+</body>
+
+</html>

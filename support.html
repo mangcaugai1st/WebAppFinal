@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/addCart.css" rel="stylesheet" type="text/css">
+    <link href="css/playVideo.css" rel="stylesheet" type="text/css">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/onMouseOver.js"></script>
+    <script src="js/addCart.js"></script>
+    <script src="js/playVideo.js"></script>
+    <script src="js/form.js"></script>
+</head>
+<body>
+<header>
+    <img alt="" src="images/openBSD.png" style="width: 250px;">
+    <img alt="" src="images/Petco_Logo.png" style="width: 200px;padding-bottom: 1cm; margin-left: -1cm;">
+</header>
+<nav style="background-color: aliceblue; color: purple; height: 50px; margin-top:0">
+    <div style="display: flex; font-size: 30px ;margin-left: 75%">
+        <a href="index.html" style="margin-right: 1cm">Home </a>
+        <a href="products.html" style="margin-right: 1cm">Products </a>
+        <a href="support.html" style="margin-right: 1cm">Support </a>
+    </div>
+</nav>
+<hr>
+<h3 align="center" style="color: #26619C; font-size: 50px;">Customer Service</h3>
+<div class="container">
+    <form action="" name="myForm" onsubmit="return validate()">
+        <div class="formGroup">
+            <label class="formLabel">Your name:</label>
+            <input class="formControl" id="name" type="text">
+        </div>
+
+        <div class="formGroup">
+            <label class="formLabel">Your email:</label>
+            <input class="formControl" id="email" type="email">
+        </div>
+        <div class="formGroup">
+            <label class="formLabel">Your phone number:</label>
+            <input class="formControl" id="phone" type="number">
+        </div>
+        <div class="formGroup">
+            <label class="formLabel">Your question:</label>
+            <input class="formControl" id="question" type="text">
+        </div>
+        <div class="submitBtn">
+            <button onclick="validateForm()" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<footer>
+    <p style="font-size: 30px;"> Terms of UsePrivacy PolicyYour Privacy ChoicesYour Privacy Choices IconSite
+        MapWebsite Accessibility Policy</p><br>
+    <p>©2022 Petco Animal Supplies, Inc. All rights reserved.</p>
+    <p>Petco Animal Supplies, Inc.® is not an insurer and is not engaged in the business of insurance. PetCoach, LLC
+        is a licensed insurance producer, not an insurer, and a wholly owned subsidiary of Petco Animal Supplies,
+        Inc. The Petco name is used for the brand name. In California, PetCoach, LLC does business as PetCoach
+        Insurance Solutions Agency (CA License No. 0M10414).</p><br>
+    <p>Pet Insurance plans are underwritten by United States Fire Insurance Company (NAIC#21113. Morristown, NJ).
+        Insurance plans are marketed and offered by PetCoach, LLC.</p><br>
+    <p>Pre-existing conditions are not covered. Waiting periods, annual deductible, co-insurance, benefit limits and
+        exclusions may apply. Click here for all terms and conditions. Products, schedules, discounts, and rates may
+        vary and are subject to change. More information available at checkout. Enroll at petco.com/petco-insurance.
+    </p><br>
+    <span>
+            <img src="images/openBSD.png" style="margin-right: 70%; margin-bottom: -1.5cm;" width="250px">
+            <img src="images/Petco_Logo.png" width="200px">
+        </span>
+</footer>
+</body>
+</html>

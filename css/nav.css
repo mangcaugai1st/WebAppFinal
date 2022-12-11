@@ -1,0 +1,8 @@
+a {
+    color: #26619C;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: orange;
+}
